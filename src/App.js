@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './output.css';
 import MenuSelector from './components/MenuSelector';
 function App() {

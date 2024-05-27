@@ -16,7 +16,7 @@ export default function MenuSelector() {
                     <div className="container mx-auto px-4 py-2">
                         <div className="flex items-center justify-between">
                             <div>
-                                <a href="#" className="text-white text-lg font-bold">Logo</a>
+                                <a href="/#" className="text-white text-lg font-bold">Logo</a>
                             </div>
                             <div>
                                 <button onClick={toggleMenu} className="text-white focus:outline-none">
@@ -30,17 +30,17 @@ export default function MenuSelector() {
                     </div>
                     <div className={isOpen ? "block" : "hidden"} id="mobile-menu">
                         <ul className="mt-2">
-                            <li><a href="#" className="block px-4 py-2 text-white">Home</a></li>
-                            <li><a href="#" className="block px-4 py-2 text-white">About</a></li>
+                            <li><a href="/#" className="block px-4 py-2 text-white">Home</a></li>
+                            <li><a href="/#" className="block px-4 py-2 text-white">About</a></li>
                             <li className="relative">
                                 <button className="block px-4 py-2 text-white w-full text-left">Services</button>
                                 <ul className="absolute top-full left-0 bg-gray-800 w-full hidden">
-                                    <li><a href="#" className="block px-4 py-2 text-white">Service 1</a></li>
-                                    <li><a href="#" className="block px-4 py-2 text-white">Service 2</a></li>
-                                    <li><a href="#" className="block px-4 py-2 text-white">Service 3</a></li>
+                                    <li><a href="/#" className="block px-4 py-2 text-white">Service 1</a></li>
+                                    <li><a href="/#" className="block px-4 py-2 text-white">Service 2</a></li>
+                                    <li><a href="/#" className="block px-4 py-2 text-white">Service 3</a></li>
                                 </ul>
                             </li>
-                            <li><a href="#" className="block px-4 py-2 text-white">Contact</a></li>
+                            <li><a href="/#" className="block px-4 py-2 text-white">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -49,13 +49,7 @@ export default function MenuSelector() {
     }
 
     function DesktopMenu() {
-        const handleMouseEnter = (event) => {
-            event.currentTarget.querySelector('ul').classList.remove('hidden');
-        };
-
-        const handleMouseLeave = (event) => {
-            event.currentTarget.querySelector('ul').classList.add('hidden');
-        };
+       
 
         return (
             <div className="navbar bg-base-100">
